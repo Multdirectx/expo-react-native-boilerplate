@@ -1,6 +1,18 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "paths": {
+      "@/test-utils": ["../config/tests/test-utils"],
+      "@/config/*": ["./config/*"],
+      "@/lib/*": ["./lib/*"],
+      "@/components/*": ["./components/*"],
+      "@/backend/*": ["./backend/*"],
+      "@/features/*": ["./features/*"],
+      "@/pages/*": ["./pages/*"],
+      "@/public/*": ["../public/*"],
+      "@/assets/*": ["./assets/*"],
+      "@/themes/*": ["./themes/*"]
+    }
   }
 }

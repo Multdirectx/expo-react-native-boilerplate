@@ -1,13 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'expo-status-bar'
+import { StyleSheet, Text, View } from 'react-native'
+import Foo from '@/components/Foo'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>Foo!</Text>
       <StatusBar style="auto" />
+      <Foo />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -15,6 +17,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    justifyContent: 'center'
+  }
+})
